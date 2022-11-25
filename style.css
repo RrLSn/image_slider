@@ -49,6 +49,10 @@ span{
     border-right: 5px solid #ffffff;    
 }
 
+.arrow_left:hover div{
+    border-right-color: #3e92cc;
+}
+
 .arrow_right{
     width: 2rem;
     height: 3rem;
@@ -65,7 +69,9 @@ span{
     background-color: #ffffff;
     border: 0.2rem solid #3e92cc;    
 }
-
+.arrow_right:hover div{
+    border-left-color: #3e92cc;
+}
 .arrow_right div{ 
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
