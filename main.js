@@ -10,15 +10,22 @@ const images = [
 ]
 
 mainEl.style.background = images[0]
-// mainEl.style.backgroundSize = 'cover'
+mainEl.style.backgroundSize = 'cover'
 
-const addon = 0
+let addon = 0
 arrowRight.addEventListener(
     'click',
     () => {
-            // mainEl.style.background = images[++addon]
-            for(i=0; i<images.length; i++){
-                mainEl.style.background = images[++i]
-            }
+            ++addon
+            mainEl.style.background = images[addon]
+    }
+)
+
+let lessOn = 5
+arrowLeft.addEventListener(
+    'click',
+    () => {
+        --lessOn
+        mainEl.style.background = images[lessOn]
     }
 )
