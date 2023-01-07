@@ -7,14 +7,13 @@ const images = [
     'url(./media/image2.jpeg)',
     'url(./media/image3.jpeg)',
     'url(./media/image4.jpeg)',
-    'url(./media/image_frame.jpeg)'
 ]
 
 mainEl.style.background = images[0]
 mainEl.style.backgroundSize = 'cover'
 
 let add0n = 0
-let less0n = images.length - 1
+let less0n = images.length 
 
 
 arrowRight.addEventListener(
@@ -34,7 +33,7 @@ arrowLeft.addEventListener(
     'click',
     () => {
         --less0n
-        if(less0n === 0){
+        if(less0n === -1){
             less0n = images.length - 1
         }
         mainEl.style.background = images[less0n]
