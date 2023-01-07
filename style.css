@@ -14,7 +14,8 @@ main{
     margin: 6rem auto;
     border: 0.5rem solid #3e92cc;
     border-radius: 7px;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 span{
