@@ -10,7 +10,6 @@ const images = [
 ]
 
 mainEl.style.background = images[0]
-mainEl.style.backgroundSize = 'cover'
 
 let xf = 0
 let xx = images.length - 1
@@ -24,6 +23,8 @@ arrowRight.addEventListener(
             xf = 0
         }
         mainEl.style.background = images[xf]
+        mainEl.style.backgroundSize = 'cover'
+
     }
 )
 
@@ -36,5 +37,7 @@ arrowLeft.addEventListener(
             xx = images.length - 1
         }
         mainEl.style.background = images[xx]
+        mainEl.style.backgroundSize = 'cover'
+
     }
 )
