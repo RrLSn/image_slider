@@ -6,38 +6,38 @@ const images = [
     'url(./media/image_frame.jpeg)',
     'url(./media/image2.jpeg)',
     'url(./media/image3.jpeg)',
-    'url(./media/image4.jpeg)'
+    'url(./media/image4.jpeg)',
+    'url(./media/image_frame.jpeg)'
 ]
 
 mainEl.style.background = images[0]
 mainEl.style.backgroundSize = 'cover'
 
-let xf = 0
-let xx = images.length - 1
+let add0n = 0
+let less0n = images.length - 1
 
-let addon = 0
+
 arrowRight.addEventListener(
     'click',
     () => {
-        ++xf
-        if(xf / xx === 1){
-            xf = 0
+        ++add0n
+        if(add0n / less0n === 1){
+            add0n = 0
         }
-        mainEl.style.background = images[xf]
+        mainEl.style.background = images[add0n]
         mainEl.style.backgroundSize = 'cover'
 
     }
 )
 
-let lessOn = 5
 arrowLeft.addEventListener(
     'click',
     () => {
-        --xx
-        if(xx === 0){
-            xx = images.length - 1
+        --less0n
+        if(less0n === 0){
+            less0n = images.length - 1
         }
-        mainEl.style.background = images[xx]
+        mainEl.style.background = images[less0n]
         mainEl.style.backgroundSize = 'cover'
 
     }
