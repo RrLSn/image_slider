@@ -10,6 +10,7 @@ const images = [
 ]
 
 mainEl.style.background = images[0]
+mainEl.style.backgroundSize = 'cover'
 
 let xf = 0
 let xx = images.length - 1
